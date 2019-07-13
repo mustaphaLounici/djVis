@@ -1,0 +1,15 @@
+circle {
+  fill: rgba(46, 59, 240, 0.438);
+  opacity: 1;
+  stroke: white;
+}
+line {
+  stroke: rgb(113, 80, 233);
+  stroke-width: 0px;
+}
+.hull {
+  fill-opacity: 0.4;
+  stroke-width: 7px;
+  stroke-linejoin: round;
+  stroke-opacity: 0.4;
+}
