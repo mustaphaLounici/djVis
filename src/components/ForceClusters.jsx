@@ -36,15 +36,13 @@ function ForceClusters({ graph }) {
               clusters.forEach(group => {
                 if (group.includes(source.id) && group.includes(target.id)) {
                   myLength *=
-                    0.15 *
+                    0.1 *
                     (sourceNode.group.length > 1
-                      ? sourceNode.group.length * 1.2
+                      ? sourceNode.group.length
                       : sourceNode.group.length) *
                     (targetNode.group.length > 1
-                      ? targetNode.group.length * 1.2
+                      ? targetNode.group.length
                       : targetNode.group.length);
-                } else {
-                  myLength *= 1 / clusters.length + 1;
                 }
               });
 
